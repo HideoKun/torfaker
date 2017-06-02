@@ -1,0 +1,47 @@
+{
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module",
+    "allowImportExportEverywhere": false
+  },
+  "extends": "eslint:recommended",
+  "globals": {
+    "console": true,
+    "document": true,
+    "window": true,
+    "module": true,
+    "require": true,
+    "setTimeout": true,
+    "clearInterval": true,
+    "describe": true,
+    "it": true,
+  },
+  "rules": {
+      "array-callback-return": "error",
+      "arrow-body-style": ["error", "as-needed"],
+      "arrow-parens": ["error", "as-needed"],
+      "arrow-spacing": "warn",
+      "block-scoped-var": "error",
+      "camelcase": "warn",
+      "class-methods-use-this": "warn",
+      "constructor-super": "error",
+      "default-case": "warn",
+      "max-nested-callbacks": ["error", 5],
+      "multiline-ternary": ["error", "always"],
+      "new-cap": "warn",
+      "no-continue": "error",
+      "no-else-return": "warn",
+      "no-empty-function": "warn",
+      "no-extend-native": "error",
+      "no-lonely-if": "warn",
+      "no-magic-numbers": "warn",
+      "no-param-reassign": "warn",
+      "no-shadow": "error",
+      "no-undef": "warn",
+      "no-useless-call": "warn",
+      "no-useless-concat": "warn",
+      "no-useless-return": "warn",
+      "no-var": "warn",
+      "no-redeclare": "error"
+  }
+}

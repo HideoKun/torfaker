@@ -1,0 +1,28 @@
+{
+    "name": "torfaker",
+    "version": "1.0.0",
+    "private": false,
+    "repository": "https://github.com/wojciechmorawski/torfaker",
+    "scripts": {
+        "start"     : "export NODE_PATH=$(pwd) && node build",
+        "start-dev" : "export NODE_PATH=$(pwd) && nodemon ./build/index.js",
+        "build"     : "rm -rf build && babel app/ -d build/ --presets es2015",
+        "build-dev" : "rm -rf build && babel app/ -d build/ --presets es2015 -w",
+        "logs"      : "tail -f ./logs/*",
+        "phantom"   : "phantomjs ./build/node_modules/crawler/index.js"
+    },
+    "dependencies": {
+        "get-port": "3.1.0",
+        "lodash": "4.17.2",
+        "phantomjs-prebuilt": "2.1.14"
+    },
+    "devDependencies": {
+        "babel-cli": "^6.24.0",
+        "babel-core": "^6.23.1",
+        "babel-eslint": "^7.2.1",
+        "babel-preset-es2015": "^6.3.13",
+        "eslint": "^3.18.0",
+        "log": "^1.4.0",
+        "nodemon": "1.11.0"
+    }
+}
